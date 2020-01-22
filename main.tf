@@ -36,5 +36,6 @@ resource "aws_instance" "web" {
   count = 2
   tags = {
         Name = "Spider-Girl-${count.index}"
+        Environment = "test"
    }
 }
